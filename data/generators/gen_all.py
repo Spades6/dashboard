@@ -69,8 +69,8 @@ def gen_ecom(rng: np.random.Generator) -> tuple[pd.DataFrame, pd.DataFrame]:
             cats.append(cat)
     sku_w = rng.dirichlet(np.full(len(skus), 0.6))  # 头部集中
     idx = rng.choice(len(skus), n, p=sku_w)
-    user_pool = rng.choice(np.arange(10001, 12001), 2000, replace=False)
-    user_w = rng.dirichlet(np.full(2000, 0.35))  # 少数用户高复购
+    user_pool = rng.choice(np.arange(10001, 18001), 7000, replace=False)
+    user_w = rng.dirichlet(np.full(7000, 0.8))  # 长尾为主，少数用户复购
     qty = rng.choice([1, 1, 1, 2, 2, 3], n)
     price = np.array(prices)[idx]
     paid = price * qty * rng.uniform(0.85, 1.0, n)
