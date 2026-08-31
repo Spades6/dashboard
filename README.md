@@ -1,5 +1,7 @@
 # 数据看板模板库 Dashboard Templates
 
+**在线演示：https://dashboard-fj2hbfgjqfd2g5dwcnxkk5.streamlit.app/**
+
 交互式数据看板模板集：上传数据、筛选下钻、一键导出。技术栈 Streamlit + pandas + Plotly。
 
 ## 模板
