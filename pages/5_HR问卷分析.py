@@ -1,6 +1,4 @@
-import streamlit as st
+from components.layout import page_header, setup_page
 
-st.set_page_config(page_title="HR/问卷分析", page_icon="🧑‍💼", layout="wide")
-
-st.title("🧑‍💼 HR / 问卷数据分析")
-st.info("模板建设中：人员结构、离职率、问卷满意度。")
+setup_page("HR/问卷分析", "🧑‍💼")
+page_header("🧑‍💼 HR / 问卷数据分析", "模板建设中：人员结构、离职率、问卷满意度。")
